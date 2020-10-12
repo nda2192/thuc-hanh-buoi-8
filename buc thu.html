@@ -8,21 +8,20 @@
 <body>
     <p>Tên: <input type="text" id="name"></p>
     <p>Địa chỉ: <input type="text" id="add"></p>
-    <p>Thời gian: ngày <input type="text" id="day" style="width: 40px;;"> tháng <input type="text" id="month" style="width: 40px"> năm <input type="text" id="year" style="width: 40px"></p>
-    <input type="button" value="Run" onclick="letter()">
+    <p>Thời gian: ngày <input type="text" id="day" style="width: 40px"> tháng <input type="text" id="month" style="width: 40px"> năm <input type="text" id="year" style="width: 40px"></p>
+    <input type="button" value="Run" onclick="bucthu()">
 
     <script>
-        function letter()
-        {
-        let ten = document.getElementById(name).value
-        let diachi = document.getElementById(add).value
-        let ngay = document.getElementById(day).value
-        let thang = document.getElementById(month).value
-        let nam = document.getElementById(year).value
-                
-        alert(ten + "32829fsdffa")
-        document.write(diachi + ", ngày" + ngay + " tháng" + thang + " năm" + nam)
-        }
+        function bucthu(){
+            let ten = document.getElementById("name").value
+            let diachi = document.getElementById("add").value
+            let ngay = document.getElementById("day").value
+            let thang = document.getElementById("month").value
+            let nam = document.getElementById("year").value
+                document.writeln(ten + ", thương nhớ.")
+                document.writeln(diachi + ", ngày " + ngay + " tháng " + thang + " năm " + nam)
+            }
+            
     </script>
 
     
